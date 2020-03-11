@@ -196,9 +196,13 @@ h4 {
 
 /* work */
 
-.workSection {
-  text-align: center;
-  padding: 50px;
+.workItem {
+  border-right: rgba(133, 118, 118, 0.5) 1px solid;
+  border-bottom: rgba(133, 118, 118, 0.5) 1px solid;
+}
+
+.workItem:nth-child(3) {
+  border-right: none;
 }
 
 .workSection li {

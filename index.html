@@ -140,14 +140,14 @@
 
             <!-- Works -->
             <div id="works">
-              <div class="workSection">
+              <div class="workSection text-center py-5">
                 <h1 class="title">{{ works.title }}</h1>
                 <h2 class="subTitle">{{ works.subTitle }}</h2>
                 <div class="container">
                   <ul>
                     <div class="row">
                       <li
-                        class="col-md-4 p-4 border-right border-secondary"
+                        class="col-md-4 p-4 workItem"
                         v-for="(item, index) in works.item"
                       >
                         <a :href="item.herf" target="_blank">
