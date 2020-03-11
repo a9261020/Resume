@@ -195,7 +195,6 @@ let app = new Vue({
           funcTions: [
             "Vue.js",
             "訪客留言板",
-            "　",
             "Node.js",
             "留言板新增、編輯、刪除"
           ],
