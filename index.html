@@ -113,7 +113,7 @@
                 <h2 class="subTitle">技術</h2>
                 <div class="row my-4">
                   <div
-                    class="col-md-6 mb-4"
+                    class="col-md-6 mb-4 skillContent"
                     v-for="(item, index) in skillIconBlock"
                     :key="index"
                   >
@@ -145,31 +145,33 @@
                 <h2 class="subTitle">{{ works.subTitle }}</h2>
                 <div class="container">
                   <ul>
-                    <div class="row mx-auto">
+                    <div class="row">
                       <li
-                        class="col-md-4 p-4"
+                        class="col-md-4 p-4 border-right border-secondary"
                         v-for="(item, index) in works.item"
                       >
                         <a :href="item.herf" target="_blank">
                           <img :src="item.img" />
                         </a>
-                        <div class="text-left text">
-                          <h5 class="title mt-3">{{ item.itemTitle }}</h5>
+                        <div class="text-left text ">
+                          <h5 class="title mt-2">{{ item.itemTitle }}</h5>
                           <div>
-                            <div class="mb-2">
+                            <div class="mb-3">
                               <h4>使用技術</h4>
                               {{item.itemDetails}}
                             </div>
 
-                            <h4>功能實現</h4>
-                            <ul>
-                              <li
-                                class="mb-1"
-                                v-for="(funcTion,index) in works.item[index].funcTions"
-                              >
-                                {{funcTion}}
-                              </li>
-                            </ul>
+                            <div class="mb-3 func">
+                              <h4>功能實現</h4>
+                              <ul>
+                                <li
+                                  class="mb-1"
+                                  v-for="(funcTion,index) in works.item[index].funcTions"
+                                >
+                                  {{funcTion}}
+                                </li>
+                              </ul>
+                            </div>
 
                             <h4>使用插件</h4>
                             <ul>
