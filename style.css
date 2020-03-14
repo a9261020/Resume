@@ -233,7 +233,7 @@ img {
 
 /* 480 */
 @media (max-width: 480px) {
-  .contextText h4 {
+  .contentText h4 {
     font-size: 1.4rem;
   }
 
