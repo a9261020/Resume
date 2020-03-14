@@ -17,7 +17,6 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 40px;
   color: #333333;
 }
 
@@ -101,13 +100,8 @@ h4 {
 /* 打字機動畫結束 */
 
 /* About */
-#about {
-  /* padding: 50px; */
-}
-
 #about p {
   line-height: 20px;
-  /* max-width: 90%; */
 }
 
 .contactInfo {
@@ -250,7 +244,13 @@ img {
   }
 
   #about {
-    padding: 50px;
     padding-right: 0;
+  }
+
+  #about h1 {
+    font-size: 1.05rem;
+  }
+  #about h2 {
+    font-size: 1rem;
   }
 }
