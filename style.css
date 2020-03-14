@@ -233,6 +233,10 @@ img {
 
 /* 480 */
 @media (max-width: 480px) {
+  .contextText h4 {
+    font-size: 1.4rem;
+  }
+
   .contentText {
     width: 90%;
     /* background-color: red; */
