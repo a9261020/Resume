@@ -80,13 +80,13 @@
             </div>
 
             <!-- about -->
-            <div id="about">
-              <div class="row">
+            <div id="about ">
+              <div class="row p-5">
                 <div class="col-xs-12 col-md-8">
                   <h1>{{ about.h1 }}</h1>
                   <h2>{{ about.h2 }}</h2>
                   <p v-for="(item, index) in about.p">{{ item }}</p>
-                  <div class="contactInfo">
+                  <div class="contactInfo mb-4">
                     <a
                       v-for="(item,index) in aboutIcon"
                       :href="`${item.link}`"
