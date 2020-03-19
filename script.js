@@ -160,6 +160,7 @@ let app = new Vue({
       subTitle: "作品集",
       item: [
         {
+          github: "https://github.com/a9261020/James_Shop",
           img: "./images/works/Vue.js-Jamess Shop.jpg",
           herf: "https://james-shop0310.herokuapp.com/",
           itemTitle: "James's Shop",
@@ -188,6 +189,7 @@ let app = new Vue({
           ]
         },
         {
+          github: "",
           img: "./images/works/Vue.js-Message board.jpg",
           herf: "https://glacial-escarpment-80195.herokuapp.com/",
           itemTitle: "Message board",
@@ -202,6 +204,7 @@ let app = new Vue({
           extensions: ["無"]
         },
         {
+          github: "https://github.com/a9261020/todo_list",
           img: "./images/works/Vue.js-Todo List with element ui.jpg",
           herf: "https://a9261020.github.io/todo_list/",
           itemTitle: "Todo List",
@@ -214,6 +217,7 @@ let app = new Vue({
           extensions: ["element-UI"]
         },
         {
+          github: "",
           img: "./images/works/Vue.js-Todo List.jpg",
           herf: "https://codesandbox.io/s/vue-todolist-rpgtx",
           itemTitle: "Todo List",
@@ -225,8 +229,8 @@ let app = new Vue({
           ],
           extensions: ["無"]
         },
-
         {
+          github: "",
           img: "./images/works/Vue.js-Calculator.jpg",
           herf: "https://codesandbox.io/s/vuejs-calculator-iezs4",
           itemTitle: "Calculator",
