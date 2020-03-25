@@ -113,7 +113,8 @@ let app = new Vue({
             "＊ 接聽電話，解決客戶問題",
             "第一時間與客戶接觸，安撫客人情緒，了解客戶對於系統上的問題，協助解決相關問題",
             "＊ 擔任PM與客戶洽談新需求/功能",
-            "詢問客戶的需求，了解之後先畫出初步的流程圖，並請研發部評估工時，請業務部報價",
+            "詢問客戶的需求，了解之後先畫出初步的流程圖，確認傳送格式、資料欄位，並請研發部評估工時，請業務部報價",
+            "目前完成專案：ASUS Tracking，CCN 提單傳送，客戶美國站點EDI維護",
             "＊ 外出對客戶教育訓練",
             "客戶有人員調動時，會向我司提出系統教育訓練，會外出至客戶公司當講師",
             "＊ 報表修改",
@@ -237,6 +238,15 @@ let app = new Vue({
           itemTitle: "Calculator",
           itemDetails: "Vue.js",
           funcTions: ["Vue.js", "簡單的計算功能"],
+          extensions: ["無"]
+        },
+        {
+          github: "https://github.com/a9261020/crmEmailConvert",
+          img: "./images/works/html-CRM Mail convert.jpg",
+          herf: "https://a9261020.github.io/crmEmailConvert",
+          itemTitle: "CRM Mail convert",
+          itemDetails: "Html、CSS、JavaScript",
+          funcTions: ["字串處理", "複製功能"],
           extensions: ["無"]
         }
       ]

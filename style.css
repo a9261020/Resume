@@ -210,6 +210,11 @@ h4 {
   border-bottom: none;
 }
 
+.workItem:nth-child(6) {
+  border-bottom: none;
+  border-right: none;
+}
+
 .workSection li {
   list-style: none;
 }

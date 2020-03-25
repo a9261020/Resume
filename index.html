@@ -151,13 +151,16 @@
                         v-for="(item, index) in works.item"
                       >
                         <a :href="item.herf" target="_blank">
-                          <img :src="item.img" />
+                          <img class="img-fluid" :src="item.img" />
                         </a>
                         <div class="text-left text ">
                           <h5 class="title mt-2">{{ item.itemTitle }}</h5>
                           <div>
                             <div class="mb-3">
-                              <a :href="item.github" v-if='item.github != "" '
+                              <a
+                                target="blank"
+                                :href="item.github"
+                                v-if='item.github != "" '
                                 >Github</a
                               >
                             </div>
