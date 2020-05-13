@@ -4,24 +4,24 @@ let app = new Vue({
     navBarItem: [
       {
         title: "About",
-        link: "about"
+        link: "about",
       },
       {
         title: "Skills",
-        link: "skills"
+        link: "skills",
       },
       {
         title: "Works",
-        link: "works"
+        link: "works",
       },
       {
         title: "Experience & Education",
-        link: "experiencesAndEducation"
-      }
+        link: "experiencesAndEducation",
+      },
     ],
     contentText: {
       h1: "Hello I'm James",
-      h4: "Beginner Fronted Engineer"
+      h4: "Beginner Fronted Engineer",
     },
     about: {
       h1: "About Me. ｜ 你有多自律 就有多自由",
@@ -36,23 +36,23 @@ let app = new Vue({
         "服務事蹟：因服務品質優良被客戶寄送了一箱芒果、客戶直接向總經理讚美說有我當員工是很幸運的事情。",
         "　",
         "從 2019/7 開始自學Html、Css、JS、Vue.js、Node.js、Mongodb，陸陸續續有做出些小作品。",
-        "購物車網站(前後端、資料庫)、留言板(前後端)、Todolist(前端)。",
-        "不清楚的地方正在逐步理解，成為一位前端工程師。"
+        "購物車網站(前後端、資料庫)、留言板(前後端)、Pomodoro、KKBOX_API(純前端)。",
+        "不清楚的地方正在逐步理解，成為一位前端工程師。",
       ],
       i: [
         {
           name: "fab fa-github",
-          link: "https://github.com/a9261020"
+          link: "https://github.com/a9261020",
         },
         {
           name: "fab fa-facebook",
-          link: "https://www.facebook.com/profile.php?id=100002492866957"
+          link: "https://www.facebook.com/profile.php?id=100002492866957",
         },
         {
           name: "fab fa-instagram",
-          link: "https://www.instagram.com/fish840212/?hl=zh-tw"
-        }
-      ]
+          link: "https://www.instagram.com/fish840212/?hl=zh-tw",
+        },
+      ],
     },
     skill: {
       iconBlock: [
@@ -64,8 +64,8 @@ let app = new Vue({
             "具有介接 FB Login API 經驗",
             "用Vue.js、Vuex，Vue-Router，Bootstrap 建立一個購物車網站",
             "以 Ajax、Axios 串接 API 資料，渲染在頁面設計SPA架構",
-            "使用 HTML5、CSS、SCSS 基礎切版，製作簡單的網頁"
-          ]
+            "使用 HTML5、CSS、SCSS 基礎切版，製作簡單的網頁",
+          ],
         },
         {
           iconName: "server",
@@ -76,14 +76,14 @@ let app = new Vue({
             "會員註冊，臉書登入、登出功能",
             "商品新增、修改、刪除，優惠券新增、修改、刪除",
             "帳單建立、查詢訂單、留言板",
-            "了解MVC的概念並嘗試在購物車中實現"
-          ]
+            "了解MVC的概念並嘗試在購物車中實現",
+          ],
         },
         {
           iconName: "network-wired",
           itemTitle: "Others",
           h6: "Git, Heroku",
-          li: ["使用 Git 簡單的基本指令來完成開發及版控", "使用Heroku做發佈"]
+          li: ["使用 Git 簡單的基本指令來完成開發及版控", "使用Heroku做發佈"],
         },
         {
           iconName: "language",
@@ -92,10 +92,10 @@ let app = new Vue({
           li: [
             "TOEIC 745分",
             "能夠應付例行性的業務需求，參加英文會議，聽取大部分要點",
-            "自學日文 考取JLPT N5"
-          ]
-        }
-      ]
+            "自學日文 考取JLPT N5",
+          ],
+        },
+      ],
     },
     experiences: {
       title: "Experiences",
@@ -119,15 +119,15 @@ let app = new Vue({
             "＊ 報表修改",
             "依照客戶的需求使用c#、My Sql語法抓出系統中的欄位，轉換成客戶需要呈現的樣子",
             "＊ 測試程式",
-            "更版前、新需求做完之後都必須對程式做測試，維持程式的品質"
-          ]
+            "更版前、新需求做完之後都必須對程式做測試，維持程式的品質",
+          ],
         },
         {
           itemH5: "Café Philo 幕哲咖啡 ｜ 內外場服務生",
           itemH6: "2015-06 ~ 2017-11",
-          itemLi: ["＊ 內場", "備料、煮餐", "＊ 外場", "帶位、送餐、咖啡製作"]
-        }
-      ]
+          itemLi: ["＊ 內場", "備料、煮餐", "＊ 外場", "帶位、送餐、咖啡製作"],
+        },
+      ],
     },
     education: {
       title: "Education",
@@ -142,8 +142,8 @@ let app = new Vue({
             "＊ 資管系學會財務長",
             "掌控各大/小活動的預算及支出，與各組溝通如何在不把預算刪減的情況下展現出我們最好的成果。大活動：五系聯合聖誕舞會、資管系財稅系聯合系烤、資管送舊…等",
             "＊ 資管系迎新活動長",
-            "帶領30人團隊活動企劃發想、執行與檢討，學習與組員共事，與其他組溝通協調。 舉辦人數130左右的迎新活動。"
-          ]
+            "帶領30人團隊活動企劃發想、執行與檢討，學習與組員共事，與其他組溝通協調。 舉辦人數130左右的迎新活動。",
+          ],
         },
         {
           itemH5: "清傳高商 ｜ 資料處理科",
@@ -151,10 +151,10 @@ let app = new Vue({
           itemLi: [
             "＊ 電腦研習社社長",
             "學習電腦的基本架構到網路的架設，帶領同學及學弟妹們來完成老師的指示。",
-            "＊ 2013年全國技藝競賽「文書處理組」個人優勝"
-          ]
-        }
-      ]
+            "＊ 2013年全國技藝競賽「文書處理組」個人優勝",
+          ],
+        },
+      ],
     },
     works: {
       title: "Works",
@@ -176,7 +176,7 @@ let app = new Vue({
             "訪客、會員留言板",
             "Node.js",
             "會員註冊、登入、臉書登入",
-            "商品、訂單、會員、優惠券、留言板，新增編輯刪除"
+            "商品、訂單、會員、優惠券、留言板，新增編輯刪除",
           ],
           extensions: [
             "Vuex",
@@ -186,8 +186,38 @@ let app = new Vue({
             "Vee-validate",
             "sweetalert",
             "axios",
-            "Bootstrap"
-          ]
+            "Bootstrap",
+          ],
+        },
+        {
+          github: "https://github.com/a9261020/pomodoro",
+          img: "./images/works/Vue.js-pomodoro.jpg",
+          herf: "https://a9261020.github.io/pomodoro",
+          itemTitle: "Pomodoro",
+          itemDetails: "Vue.js、vuex、vue-router、SCSS",
+          funcTions: [
+            "Todolist",
+            "計時功能",
+            "音樂播放功能",
+            "鈴聲設置",
+            "手刻SCSS",
+          ],
+          extensions: ["無"],
+        },
+        {
+          github: "https://github.com/a9261020/kkbox_api",
+          img: "./images/works/Vue.js-KKBOX_api.jpg",
+          herf: "https://a9261020.github.io/kkbox_api",
+          itemTitle: "kkbox_api",
+          itemDetails: "Vue.js、KKbox open api、Vuex",
+          funcTions: [
+            "api串接",
+            "Axios獲取token資料",
+            "用Vuex儲存token",
+            "歌曲撥放",
+            "手刻SCSS",
+          ],
+          extensions: ["Axios"],
         },
         {
           github: "",
@@ -200,9 +230,9 @@ let app = new Vue({
             "訪客留言板",
             "　",
             "Node.js",
-            "留言板新增、編輯、刪除"
+            "留言板新增、編輯、刪除",
           ],
-          extensions: ["無"]
+          extensions: ["無"],
         },
         {
           github: "https://github.com/a9261020/todo_list",
@@ -213,9 +243,9 @@ let app = new Vue({
           funcTions: [
             "Vue.js",
             "新增、修改、刪除任務",
-            "判斷任務狀態，是否完成"
+            "判斷任務狀態，是否完成",
           ],
-          extensions: ["element-UI"]
+          extensions: ["element-UI"],
         },
         {
           github: "",
@@ -226,30 +256,12 @@ let app = new Vue({
           funcTions: [
             "Vue.js",
             "新增、修改、刪除任務",
-            "判斷任務狀態，是否完成"
+            "判斷任務狀態，是否完成",
           ],
-          extensions: ["無"]
+          extensions: ["無"],
         },
-        {
-          github: "",
-          img: "./images/works/Vue.js-Calculator.jpg",
-          herf: "https://codesandbox.io/s/vuejs-calculator-iezs4",
-          itemTitle: "Calculator",
-          itemDetails: "Vue.js",
-          funcTions: ["Vue.js", "簡單的計算功能"],
-          extensions: ["無"]
-        },
-        {
-          github: "https://github.com/a9261020/crmEmailConvert",
-          img: "./images/works/html-CRM Mail convert.jpg",
-          herf: "https://a9261020.github.io/crmEmailConvert",
-          itemTitle: "CRM Mail convert",
-          itemDetails: "Html、CSS、JavaScript",
-          funcTions: ["字串處理", "複製功能"],
-          extensions: ["無"]
-        }
-      ]
-    }
+      ],
+    },
   },
   computed: {
     navBarLink() {
@@ -269,17 +281,17 @@ let app = new Vue({
     },
     worksItem() {
       return Object.values(this.works.item);
-    }
-  }
+    },
+  },
 });
 
 // 讓打字機結束後可以停頓一秒之後再重複執行
 // 參考網站：https://www.cnblogs.com/wangshengli520/p/9899703.html
 let contextText = document.querySelector(".contextText,h4");
 contextText.classList.add("animate");
-contextText.addEventListener("animationend", function() {
+contextText.addEventListener("animationend", function () {
   contextText.classList.remove("animate");
-  setTimeout(function() {
+  setTimeout(function () {
     contextText.classList.add("animate");
   }, 0800);
 });
