@@ -229,21 +229,6 @@ let app = new Vue({
           extensions: ["無"],
         },
         {
-          github: "",
-          img: "./images/works/Vue.js-Message board.jpg",
-          herf: "https://glacial-escarpment-80195.herokuapp.com/",
-          itemTitle: "Message board",
-          itemDetails: "Express、Mongoose、heroku",
-          funcTions: [
-            "Vue.js",
-            "訪客留言板",
-            "　",
-            "Node.js",
-            "留言板新增、編輯、刪除",
-          ],
-          extensions: ["無"],
-        },
-        {
           github: "https://github.com/a9261020/todo_list",
           img: "./images/works/Vue.js-Todo List with element ui.jpg",
           herf: "https://a9261020.github.io/todo_list/",
