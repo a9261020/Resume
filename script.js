@@ -221,6 +221,15 @@ let app = new Vue({
         },
         {
           github: "",
+          img: "./images/works/Vue.js-Amos_Layout.jpg",
+          herf: "https://a9261020.github.io/Amos_Layout/",
+          itemTitle: "Amos-金魚都能懂的切版",
+          itemDetails: "html、scss",
+          funcTions: ["各式切版技術"],
+          extensions: ["無"],
+        },
+        {
+          github: "",
           img: "./images/works/Vue.js-Message board.jpg",
           herf: "https://glacial-escarpment-80195.herokuapp.com/",
           itemTitle: "Message board",
