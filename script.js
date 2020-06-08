@@ -220,7 +220,7 @@ let app = new Vue({
           extensions: ["Axios"],
         },
         {
-          github: "",
+          github: "https://github.com/a9261020/Amos_Layout",
           img: "./images/works/Vue.js-Amos_Layout.jpg",
           herf: "https://a9261020.github.io/Amos_Layout/",
           itemTitle: "Amos-金魚都能懂的切版",
