@@ -14,7 +14,6 @@
       href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -25,6 +24,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
 
     <link rel="stylesheet" href="style.css" />
     <title>James's Resume</title>
@@ -34,7 +37,7 @@
     <div id="app">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-12" style="padding:0;">
+          <div class="col-md-12" style="padding: 0;">
             <!-- navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
               <!-- RWD button -->
@@ -82,7 +85,7 @@
             <!-- about -->
             <div id="about">
               <div class="row p-5">
-                <div class="col-md-8">
+                <div class="col-md-8" data-aos="fade-right">
                   <h1>{{ about.h1 }}</h1>
                   <h2 class="mb-3">{{ about.h2 }}</h2>
                   <p v-for="(item, index) in about.p">{{ item }}</p>
@@ -99,7 +102,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left">
                   <img class="img-fluid" src="images/selfie.jpg" alt="" />
                 </div>
               </div>
@@ -116,6 +119,7 @@
                     class="col-md-6 mb-4 skillContent"
                     v-for="(item, index) in skillIconBlock"
                     :key="index"
+                    data-aos="fade-up"
                   >
                     <div class="skill-item">
                       <span class="iconBlock">
@@ -149,11 +153,12 @@
                       <li
                         class="col-md-4 p-4 workItem"
                         v-for="(item, index) in works.item"
+                        data-aos="fade-up"
                       >
                         <a :href="item.herf" target="_blank">
                           <img class="img-fluid" :src="item.img" />
                         </a>
-                        <div class="text-left text ">
+                        <div class="text-left text">
                           <h5 class="title mt-2">{{ item.itemTitle }}</h5>
                           <div>
                             <div class="mb-3">
@@ -218,6 +223,7 @@
                             class="ul-list-item item"
                             v-for="(item,index) in expItem"
                             :key="index"
+                            data-aos="fade-right"
                           >
                             <h5>{{ item.itemH5 }}</h5>
                             <h6>{{ item.itemH6 }}</h6>
@@ -244,6 +250,7 @@
                             class="ul-list-item item"
                             v-for="(item,index) in eduItem"
                             :key="index"
+                            data-aos="fade-left"
                           >
                             <h5>{{ item.itemH5 }}</h5>
                             <h6>{{ item.itemH6 }}</h6>
@@ -270,7 +277,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
     <!-- Vue.js -->
     <script src="script.js"></script>

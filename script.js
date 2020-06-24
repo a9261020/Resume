@@ -289,3 +289,9 @@ contextText.addEventListener("animationend", function () {
     contextText.classList.add("animate");
   }, 0800);
 });
+
+AOS.init({
+  offset: 120,
+  duration: 1000,
+  easing: "ease",
+});
