@@ -21,23 +21,22 @@ let app = new Vue({
     ],
     contentText: {
       h1: "Hello I'm James",
-      h4: "Beginner Fronted Engineer",
+      h4: "Fronted Engineer",
     },
     about: {
       h1: "About Me. ｜ 你有多自律 就有多自由",
       h2: "James ｜ 李哲宇",
       p: [
-        "曾經是個快破百的胖子，自學健身、控制飲食，半年減了20公斤，兩年達到體態巔峰，三項總合450公斤。",
-        "勇於踏出舒適圈、了解需要的東西，一步一步的實現，尋找解決方案，正面面對問題。",
-        "擔任「溝通」、「洽談」的角色，例如：洽談客戶需求、與工程師討論客戶的需求該如何實現，通過溝通有效達成團隊合作。",
         "　",
         "畢業於臺北商業大學-資訊管理系",
-        "目前於台灣慧諮擔任客服顧問，負責釐清客戶問題、客戶教育訓練、擔任PM與客戶洽談新需求/功能、報表修改",
-        "服務事蹟：因服務品質優良被客戶寄送了一箱芒果、客戶直接向總經理讚美說有我當員工是很幸運的事情。",
+        "　",
+        "勇於踏出舒適圈、了解需要的東西，一步一步的實現，尋找解決方案，正面面對問題。",
         "　",
         "從 2019/7 開始自學Html、Css、JS、Vue.js、Node.js、Mongodb，陸陸續續有做出些小作品。",
+        "　",
         "購物車網站(前後端、資料庫)、留言板(前後端)、Pomodoro、KKBOX_API(純前端)。",
-        "不清楚的地方正在逐步理解，成為一位前端工程師。",
+        "　",
+        "目前在網路筆記工程部擔任前端工程師，維護商城頁面、開發新功能。",
       ],
       i: [
         {
@@ -45,12 +44,8 @@ let app = new Vue({
           link: "https://github.com/a9261020",
         },
         {
-          name: "fab fa-facebook",
-          link: "https://www.facebook.com/profile.php?id=100002492866957",
-        },
-        {
-          name: "fab fa-instagram",
-          link: "https://www.instagram.com/fish840212/?hl=zh-tw",
+          name: "fab fa-blogger",
+          link: "https://a9261020.github.io/jamesBlog/",
         },
       ],
     },
@@ -64,7 +59,7 @@ let app = new Vue({
             "具有介接 FB Login API 經驗",
             "用Vue.js、Vuex，Vue-Router，Bootstrap 建立一個購物車網站",
             "以 Ajax、Axios 串接 API 資料，渲染在頁面設計SPA架構",
-            "使用 HTML5、CSS、SCSS 基礎切版，製作簡單的網頁",
+            "使用 原生JS、Jquery、SASS、SCSS 做網頁切版",
           ],
         },
         {
@@ -82,8 +77,8 @@ let app = new Vue({
         {
           iconName: "network-wired",
           itemTitle: "Others",
-          h6: "Git, Heroku",
-          li: ["使用 Git 簡單的基本指令來完成開發及版控", "使用Heroku做發佈"],
+          h6: "Git(sourceTree), Heroku",
+          li: ["使用 Git 來完成開發及版控", "使用Heroku做發佈"],
         },
         {
           iconName: "language",
@@ -102,8 +97,13 @@ let app = new Vue({
       subTitle: "經歷",
       item: [
         {
+          itemH5: "Biji 網路筆記 ｜ 前端工程師",
+          itemH6: "2020-07-21 ~ 至今",
+          itemLi: ["* 作品", "Jodo網頁官網設計及製作"],
+        },
+        {
           itemH5: "Wisetechglobal 台灣慧諮 ｜ 客服顧問師",
-          itemH6: "2018-05-24 ~ 至今",
+          itemH6: "2018-05-24 ~ 2020-07-17",
           itemLi: [
             "＊ 特殊經歷",
             "寫了一隻字串處理程式(CRM Mail convert)，將例行性作業省了 90% 的時間",
@@ -121,11 +121,6 @@ let app = new Vue({
             "＊ 測試程式",
             "更版前、新需求做完之後都必須對程式做測試，維持程式的品質",
           ],
-        },
-        {
-          itemH5: "Café Philo 幕哲咖啡 ｜ 內外場服務生",
-          itemH6: "2015-06 ~ 2017-11",
-          itemLi: ["＊ 內場", "備料、煮餐", "＊ 外場", "帶位、送餐、咖啡製作"],
         },
       ],
     },
