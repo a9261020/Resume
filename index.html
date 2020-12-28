@@ -1,300 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-    <!-- Bootstrap CSS -->
+		<!-- Bootstrap CSS -->
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-    />
+		<link
+			href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
 
-    <link rel="stylesheet" href="style.css" />
-    <title>James's Resume</title>
-  </head>
+		<link rel="stylesheet" href="style.css" />
+		<title>James's Resume</title>
+	</head>
 
-  <body>
-    <div id="app">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12" style="padding: 0;">
-            <!-- navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-              <!-- RWD button -->
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#bs-example-navbar-collapse-1"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+	<body>
+		<div id="app">
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+				<!-- RWD button -->
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-              <!-- index button -->
-              <a class="navbar-brand" href="#content">James</a>
-              <div
-                class="collapse navbar-collapse"
-                id="bs-example-navbar-collapse-1"
-              >
-                <ul class="navbar-nav ml-md-auto">
-                  <li
-                    class="nav-item"
-                    v-for="(item, index) in navBarItem"
-                    :key="index"
-                  >
-                    <a class="nav-link" :href="`#${item.link}`">
-                      {{ item.title }}</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </nav>
+				<!-- index button -->
+				<a class="navbar-brand" href="#content">James</a>
+				<div
+					class="collapse navbar-collapse"
+					id="bs-example-navbar-collapse-1"
+				>
+					<ul class="navbar-nav ml-md-auto">
+						<li
+							class="nav-item"
+							v-for="(item, index) in navBarItem"
+							:key="index"
+						>
+							<a class="nav-link" :href="`#${item.link}`">
+								{{ item.title }}</a
+							>
+						</li>
+					</ul>
+				</div>
+			</nav>
 
-            <!-- content -->
-            <div id="content">
-              <div class="contentSection">
-                <div class="contentContainer col-md-12">
-                  <div class="contentText text-center">
-                    <h1>{{ contentText.h1 }}</h1>
-                    <h4>{{ contentText.h4 }}</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
+			<!-- content -->
+			<div id="content">
+				<div class="contentSection">
+					<div class="contentContainer col-md-12">
+						<div class="contentText text-center">
+							<h1>{{ contentText.h1 }}</h1>
+							<h4>{{ contentText.h4 }}</h4>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <!-- about -->
-            <div id="about">
-              <div class="row p-5">
-                <div class="col-md-8" data-aos="fade-right">
-                  <h1>{{ about.h1 }}</h1>
-                  <h2 class="mb-3">{{ about.h2 }}</h2>
-                  <p v-for="(item, index) in about.p">{{ item }}</p>
-                  <div class="contactInfo mb-4">
-                    <a
-                      v-for="(item,index) in aboutIcon"
-                      :href="`${item.link}`"
-                      target="_blank"
-                    >
-                      <i :class="`${item.name}`"></i>
-                    </a>
-                    <a href="mailto:a9261020@gmail.com">
-                      <i class="far fa-envelope"></i>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-left">
-                  <img class="img-fluid" src="images/selfie.jpg" alt="" />
-                </div>
-              </div>
-            </div>
+			<!-- about -->
+			<div id="about">
+				<div class="d-flex flex-wrap p-5">
+					<div class="col-md-8 col-sm" data-aos="fade-right">
+						<h1>{{ about.h1 }}</h1>
+						<h2 class="mb-3">{{ about.h2 }}</h2>
+						<p v-for="(item, index) in about.p">{{ item }}</p>
+						<div class="contactInfo mb-4">
+							<a
+								v-for="(item,index) in aboutIcon"
+								:href="`${item.link}`"
+								target="_blank"
+							>
+								<i :class="`${item.name}`"></i>
+							</a>
+							<a href="mailto:a9261020@gmail.com">
+								<i class="far fa-envelope"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm" data-aos="fade-left">
+						<img class="img-fluid" src="images/selfie.jpg" alt="" />
+					</div>
+				</div>
+			</div>
 
-            <!-- skills -->
-            <div id="skills">
-              <div id="skillSection"></div>
-              <div class="container text-center">
-                <h1 class="title">Skills</h1>
-                <h2 class="subTitle">技術</h2>
-                <div class="row my-4">
-                  <div
-                    class="col-md-6 mb-4 skillContent"
-                    v-for="(item, index) in skillIconBlock"
-                    :key="index"
-                    data-aos="fade-up"
-                  >
-                    <div class="skill-item">
-                      <span class="iconBlock">
-                        <i :class="`fas fa-${item.iconName}`"></i>
-                      </span>
-                      <h4 class="skill-item-title">{{ item.itemTitle }}</h4>
-                      <h6>{{ item.h6 }}</h6>
-                      <hr />
-                      <div class="skill-item-text">
-                        <ul
-                          v-for="(item,index) in skill.iconBlock[index].li"
-                          :key="index"
-                        >
-                          <li>{{ item }}</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+			<!-- skills -->
+			<div id="skills" class="p-3">
+				<div id="skillSection"></div>
+				<div class="container text-center">
+					<h1 class="title">Skills</h1>
+					<h2 class="subTitle">技術</h2>
+					<div class="row my-4">
+						<div
+							class="col-md-6 mb-4 skillContent"
+							v-for="(item, index) in skillIconBlock"
+              :key="index"
+              data-aos="fade-up"
+						>
+							<div class="skill-item">
+								<span class="iconBlock">
+									<i :class="`fas fa-${item.iconName}`"></i>
+								</span>
+								<h4 class="skill-item-title">
+									{{ item.itemTitle }}
+								</h4>
+								<h6>{{ item.h6 }}</h6>
+								<hr />
+								<div class="skill-item-text">
+									<ul
+										v-for="(item,index) in skill.iconBlock[index].li"
+										:key="index"
+									>
+										<li>{{ item }}</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-            <!-- Works -->
-            <div id="works">
-              <div class="workSection text-center py-5">
-                <h1 class="title">{{ works.title }}</h1>
-                <h2 class="subTitle">{{ works.subTitle }}</h2>
-                <div class="container">
-                  <ul>
-                    <div class="row">
-                      <li
-                        class="col-md-4 p-4 workItem"
-                        v-for="(item, index) in works.item"
-                        data-aos="fade-up"
-                      >
-                        <a :href="item.herf" target="_blank">
-                          <img class="img-fluid" :src="item.img" />
-                        </a>
-                        <div class="text-left text">
-                          <h5 class="title mt-2">{{ item.itemTitle }}</h5>
-                          <div>
-                            <div class="mb-3">
-                              <a
-                                target="blank"
-                                :href="item.github"
-                                v-if='item.github != "" '
-                                >Github</a
-                              >
-                            </div>
+			<!-- Works -->
+			<div id="works">
+				<div class="workSection text-center py-5">
+					<h1 class="title">{{ works.title }}</h1>
+					<h2 class="subTitle">{{ works.subTitle }}</h2>
+					<div class="container">
+						<ul>
+							<div class="row">
+								<li
+									class="col-md-4 p-4 workItem"
+                  v-for="(item, index) in works.item"
+                  data-aos="fade-up"
+								>
+									<a :href="item.herf" target="_blank">
+										<img
+											class="img-fluid"
+											:src="item.img"
+										/>
+									</a>
+									<div class="text-left text">
+										<h5 class="title mt-2">
+											{{ item.itemTitle }}
+										</h5>
+										<div>
+											<div class="mb-3">
+												<a
+													target="blank"
+													:href="item.github"
+													v-if='item.github != "" '
+													>Github</a
+												>
+											</div>
 
-                            <div class="mb-3">
-                              <h4>使用技術</h4>
-                              {{item.itemDetails}}
-                            </div>
+											<div class="mb-3">
+												<h4>使用技術</h4>
+												{{item.itemDetails}}
+											</div>
 
-                            <h4>功能實現</h4>
-                            <div class="mb-3 pl-3 func">
-                              <ul>
-                                <li
-                                  class="mb-1"
-                                  v-for="(funcTion,index) in works.item[index].funcTions"
-                                >
-                                  {{funcTion}}
-                                </li>
-                              </ul>
-                            </div>
+											<h4>功能實現</h4>
+											<div class="mb-3 pl-3 func">
+												<ul>
+													<li
+														class="mb-1"
+														v-for="(funcTion,index) in works.item[index].funcTions"
+													>
+														{{funcTion}}
+													</li>
+												</ul>
+											</div>
 
-                            <h4>使用插件</h4>
-                            <ul>
-                              <li
-                                class="mb-1"
-                                v-for="(extension,index) in works.item[index].extensions"
-                              >
-                                {{extension}}
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </li>
-                    </div>
-                  </ul>
-                </div>
-              </div>
-            </div>
+											<h4>使用插件</h4>
+											<ul>
+												<li
+													class="mb-1"
+													v-for="(extension,index) in works.item[index].extensions"
+												>
+													{{extension}}
+												</li>
+											</ul>
+										</div>
+									</div>
+								</li>
+							</div>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-            <!-- Exp&Edu -->
-            <div id="experiencesAndEducation">
-              <div class="experienceAndEducationSection">
-                <div class="container">
-                  <div class="row">
-                    <!-- experience -->
-                    <div class="col-md-6">
-                      <div class="experiences"></div>
-                      <h1 class="title">{{ experiences.title }}</h1>
-                      <h2 class="subTitle">
-                        {{ experiences.subTitle }}
-                      </h2>
-                      <div>
-                        <ul class="ul-list">
-                          <li
-                            class="ul-list-item item"
-                            v-for="(item,index) in expItem"
-                            :key="index"
-                            data-aos="fade-right"
-                          >
-                            <h5>{{ item.itemH5 }}</h5>
-                            <h6>{{ item.itemH6 }}</h6>
-                            <ul class="ul-list--inner">
-                              <li
-                                class="itemDetails"
-                                v-for="itemDetail in item.itemLi"
-                              >
-                                {{itemDetail}}
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- education -->
-                    <div class="col-md-6">
-                      <div class="education"></div>
-                      <h1 class="title">{{ education.title }}</h1>
-                      <h2 class="subTitle">{{ education.subTitle }}</h2>
-                      <div>
-                        <ul class="ul-list">
-                          <li
-                            class="ul-list-item item"
-                            v-for="(item,index) in eduItem"
-                            :key="index"
-                            data-aos="fade-left"
-                          >
-                            <h5>{{ item.itemH5 }}</h5>
-                            <h6>{{ item.itemH6 }}</h6>
-                            <ul class="ul-list--inner">
-                              <li
-                                class="itemDetails"
-                                v-for="itemDetail in item.itemLi"
-                              >
-                                {{ itemDetail }}
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			<!-- Exp&Edu -->
+			<div id="experiencesAndEducation">
+				<div class="experienceAndEducationSection">
+					<div class="container">
+						<div class="row">
+							<!-- experience -->
+							<div class="col-md-6">
+								<div class="experiences"></div>
+								<h1 class="title">{{ experiences.title }}</h1>
+								<h2 class="subTitle">
+									{{ experiences.subTitle }}
+								</h2>
+								<div>
+									<ul class="ul-list">
+										<li
+											class="ul-list-item item"
+											v-for="(item,index) in expItem"
+                      :key="index"
+                      data-aos="fade-right"
+										>
+											<h5>{{ item.itemH5 }}</h5>
+											<h6>{{ item.itemH6 }}</h6>
+											<ul class="ul-list--inner">
+												<li
+													class="itemDetails"
+													v-for="itemDetail in item.itemLi"
+												>
+													{{itemDetail}}
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- education -->
+							<div class="col-md-6">
+								<div class="education"></div>
+								<h1 class="title">{{ education.title }}</h1>
+								<h2 class="subTitle">
+									{{ education.subTitle }}
+								</h2>
+								<div>
+									<ul class="ul-list">
+										<li
+											class="ul-list-item item"
+											v-for="(item,index) in eduItem"
+                      :key="index"
+                      data-aos="fade-left"
+										>
+											<h5>{{ item.itemH5 }}</h5>
+											<h6>{{ item.itemH6 }}</h6>
+											<ul class="ul-list--inner">
+												<li
+													class="itemDetails"
+													v-for="itemDetail in item.itemLi"
+												>
+													{{ itemDetail }}
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
-    <!-- Vue.js -->
-    <script src="script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+		<!-- Vue.js -->
+		<script src="script.js"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
