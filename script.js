@@ -234,7 +234,7 @@ let app = new Vue({
           img: "./images/works/React-IP_tracker.jpg",
           herf: "https://ip-tracker-sage.vercel.app/",
           itemTitle: "IP-tracker",
-          itemDetails: "vue3, vue-router, compositionAPI",
+          itemDetails: "React Hook, redux, redux-saga",
           funcTions: [
             "串接 leaflet API",
             "串接 ipify API",
