@@ -30,13 +30,11 @@ let app = new Vue({
         "　",
         "畢業於臺北商業大學-資訊管理系",
         "　",
-        "勇於踏出舒適圈、了解需要的東西，一步一步的實現，尋找解決方案，正面面對問題。",
+        "畢業後先於WiseTech Global擔任兩年客服顧問，後來自學程式轉職為前端工程師。",
         "　",
-        "從 2019/7 開始自學Html、Css、JS、Vue.js、Node.js、Mongodb，陸陸續續有做出些小作品。",
+        "曾在筆記網路負責維護商城頁面、開發新功能(jQuery)",
         "　",
-        "購物車網站(前後端、資料庫)、留言板(前後端)、Pomodoro、KKBOX_API(純前端)。",
-        "　",
-        "目前在筆記網路工程部擔任前端工程師，維護商城頁面、開發新功能。",
+        "現於哲煜科技，開發專案，比漾廣場官網翻新(Nuxt.js)",
       ],
       i: [
         {
@@ -54,12 +52,11 @@ let app = new Vue({
         {
           iconName: "desktop",
           itemTitle: "Frontend Development",
-          h6: "HTML, CSS, Javascript, Vue.js",
+          h6: "Nuxt.js, Vue.js(2, 3), React.js, jQuery",
           li: [
-            "具有介接 FB Login API 經驗",
-            "用Vue.js、Vuex，Vue-Router，Bootstrap 建立一個購物車網站",
-            "以 Ajax、Axios 串接 API 資料，渲染在頁面設計SPA架構",
-            "使用 原生JS、Jquery、SASS、SCSS 做網頁切版",
+            "在筆記網路使用jQuery維護及開發新功能",
+            "使用Nuxt.js搭配SCSS完成專案開發，了解SSR的特性，強化SEO",
+            "可使用React.js獨立完成小型專案"
           ],
         },
         {
@@ -77,8 +74,8 @@ let app = new Vue({
         {
           iconName: "network-wired",
           itemTitle: "Others",
-          h6: "Git(sourceTree), Heroku",
-          li: ["使用 Git 來完成開發及版控", "使用Heroku做發佈"],
+          h6: "Git(sourceTree), Heroku, vercel",
+          li: ["了解Git在實戰中該如何正確使用(功能改壞、即時救火)","使用 Git 來完成開發及版控", ],
         },
         {
           iconName: "language",
@@ -97,8 +94,17 @@ let app = new Vue({
       subTitle: "經歷",
       item: [
         {
+          itemH5: "哲煜科技 ｜ 前端工程師",
+          itemH6: "2021-02-17 ~ 至今",
+          itemLi: [
+            "* 獨立完成",
+            "比漾廣場官網、商城、文章系統",
+            "哲煜科技官網"
+          ],
+        },
+        {
           itemH5: "Biji 筆記網路 ｜ 前端工程師",
-          itemH6: "2020-07-21 ~ 至今",
+          itemH6: "2020-07-21 ~ 2021-01-29",
           itemLi: [
             "* 作品",
             "筆記商城維護",
@@ -162,10 +168,58 @@ let app = new Vue({
       subTitle: "作品集",
       item: [
         {
+          github: "",
+          img: "./images/works/Nuxt.js-Beyond(official).jpg",
+          herf: "https://beyondbeyond.com.tw/official",
+          itemTitle: "比漾廣場 - (官網)",
+          itemDetails: "Nuxt.js、SCSS",
+          funcTions: [
+            "比漾都是獨立完成，顧只挑其中功能講解",
+            "AWD架構",
+            "透過SSR優化SEO",
+            "會員抽獎功能(免費及扣點)",
+            "DM功能",
+            "串接Google Calendar API",
+          ],
+          extensions: [],
+        },
+        {
+          github: "",
+          img: "./images/works/Nuxt.js-Beyond(content).jpg",
+          herf: "https://beyondbeyond.com.tw/",
+          itemTitle: "比漾廣場 - (文章)",
+          itemDetails: "Nuxt.js、SCSS、Canvas",
+          funcTions: [
+            "AWD架構",
+            "透過SSR優化SEO",
+            "Canvas - X Day賀卡製作",
+            "文件檔案投稿上傳",
+            "電子發票載具歸戶API",
+            "串接社群分享功能(FB, Twitter, Line, Pinterest)",
+          ],
+          extensions: [],
+        },
+        {
+          github: "",
+          img: "./images/works/Nuxt.js-Beyond(shop).jpg",
+          herf: "https://beyondbeyond.com.tw/shop",
+          itemTitle: "比漾廣場 - (商城)",
+          itemDetails: "Nuxt.js、SCSS",
+          funcTions: [
+            "AWD架構",
+            "透過SSR優化SEO",
+            "當前位置偵測並串接中央天氣預報API",
+            "商品圖片放大鏡",
+            "串接台新付款API",
+            "發票捐贈API"
+          ],
+          extensions: [],
+        },
+        {
           github: "https://github.com/a9261020/James_Shop",
           img: "./images/works/Vue.js-Jamess Shop.jpg",
           herf: "https://james-shop0310.herokuapp.com/",
-          itemTitle: "James's Shop",
+          itemTitle: "James's Shop - (前後端)",
           itemDetails: "Vuex、Express、Mongoose、heroku",
           funcTions: [
             "Vue.js",
@@ -228,55 +282,6 @@ let app = new Vue({
             "vue3",
             "vue-router"
           ],
-        },
-        {
-          github: "https://github.com/a9261020/IP-Tracker",
-          img: "./images/works/React-IP_tracker.jpg",
-          herf: "https://ip-tracker-sage.vercel.app/",
-          itemTitle: "IP-tracker",
-          itemDetails: "React Hook, redux, redux-saga",
-          funcTions: [
-            "串接 leaflet API",
-            "串接 ipify API",
-            "React hooks",
-            "useState",
-            "useEffect",
-          ],
-          extensions: [
-            "React",
-            "redux",
-            "redux-saga"
-          ],
-        },
-        {
-          github: "https://github.com/a9261020/pomodoro",
-          img: "./images/works/Vue.js-pomodoro.jpg",
-          herf: "https://a9261020.github.io/pomodoro",
-          itemTitle: "Pomodoro",
-          itemDetails: "Vue.js、vuex、vue-router、SCSS",
-          funcTions: [
-            "Todolist",
-            "計時功能",
-            "音樂播放功能",
-            "鈴聲設置",
-            "手刻SCSS",
-          ],
-          extensions: ["無"],
-        },
-        {
-          github: "https://github.com/a9261020/kkbox_api",
-          img: "./images/works/Vue.js-KKBOX_api.jpg",
-          herf: "https://a9261020.github.io/kkbox_api",
-          itemTitle: "kkbox_api",
-          itemDetails: "Vue.js、KKbox open api、Vuex",
-          funcTions: [
-            "api串接",
-            "Axios獲取token資料",
-            "用Vuex儲存token",
-            "歌曲撥放",
-            "手刻SCSS",
-          ],
-          extensions: ["Axios"],
         },
       ],
     },

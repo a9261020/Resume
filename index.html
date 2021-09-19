@@ -99,7 +99,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-md-4 col-sm" data-aos="fade-left">
+					<div class="selfie col-md-4 col-sm" data-aos="fade-left">
 						<img class="img-fluid" src="images/selfie.jpg" alt="" />
 					</div>
 				</div>
@@ -154,9 +154,9 @@
                   v-for="(item, index) in works.item"
                   data-aos="fade-up"
 								>
-									<a :href="item.herf" target="_blank">
+									<a :href="item.herf" target="_blank" class="work-img-wrap">
 										<img
-											class="img-fluid"
+											class="img-fluid work-img"
 											:src="item.img"
 										/>
 									</a>
