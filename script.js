@@ -36,7 +36,7 @@ let app = new Vue({
         "　",
         "已上線：比漾廣場官網(Nuxt.js)、寶島鐘錶(Nuxt.js)",
         "　",
-        "開發中：Dolfan (Nuxt.js，Socket.io)",
+        "開發中：xxx (Nuxt.js，Socket.io)",
       ],
       i: [
         {
