@@ -154,7 +154,7 @@
                   v-for="(item, index) in works.item"
                   data-aos="fade-up"
 								>
-									<a :href="item.herf" target="_blank" class="work-img-wrap">
+									<a :href="item.href" target="_blank" class="work-img-wrap">
 										<img
 											class="img-fluid work-img"
 											:src="item.img"
@@ -191,15 +191,6 @@
 												</ul>
 											</div>
 
-											<h4>使用插件</h4>
-											<ul>
-												<li
-													class="mb-1"
-													v-for="(extension,index) in works.item[index].extensions"
-												>
-													{{extension}}
-												</li>
-											</ul>
 										</div>
 									</div>
 								</li>
