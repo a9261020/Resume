@@ -21,7 +21,7 @@ let app = new Vue({
     ],
     contentText: {
       h1: "Hello I'm James",
-      h4: "Fronted Engineer",
+      h4: "Frontend Engineer",
     },
     about: {
       h1: "James ｜ 李哲宇",
