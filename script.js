@@ -94,7 +94,12 @@ let app = new Vue({
         {
           itemH5: 'Yahoo ｜ INTL Media Frontend',
           itemH6: '2022-06-06 ~ 在職',
-          itemLi: ['BionicReading feature experiment', 'Rookie onboarding doc'],
+          itemLi: [
+            '採用monorepo維護專案',
+            '使用Jest、Mocha、Enzyme進行測試',
+            'BionicReading feature experiment',
+            'Rookie onboarding doc',
+          ],
         },
         {
           itemH5: '哲煜科技 ｜ 前端工程師',
