@@ -99,6 +99,7 @@ let app = new Vue({
             '使用Jest、Mocha、Enzyme進行測試',
             'BionicReading feature experiment',
             'Rookie onboarding doc',
+            'use cache to save lots of money from third party API',
           ],
         },
         {
